@@ -9,7 +9,7 @@ hero:
 
 Hi, I'm Aloysius, currently an undergraduate student at the National University of Singapore, majoring in Computer Science.
 I'm interested in many subfields of Computer Science, and am pursuing a career as a software engineer.
-I'm using this site to blog things I want to talk about, show off projects I've made, as well as give reviews for modules I've taken in NUS
+I'm using this site to blog things I want to talk about, show off projects I've made, as well as give reviews for modules I've taken in NUS.
 
 ## Projects I've made
 

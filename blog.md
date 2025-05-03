@@ -3,7 +3,7 @@ title: All Blog Posts
 aside: false
 ---
 
-Nothing here for now!
+Nothing here for now
 <!---
 <script setup>
 import { data as blogs } from '/data/blogs.data'
