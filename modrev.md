@@ -12,7 +12,7 @@ import formatDate from "/.vitepress/theme/utils/formatDate"
 Here are all the modules I've taken in NUS so far.
 These pages are meant to go through what a module covers,
 and also allows me to mention fun things I did in that module.
-If a module does not have a link to it, I either SU'd it or it did not have much worth talking about.
+If a module does not have a link attached to it, I either SU'd it or it did not have much worth talking about.
 
 <template v-for="key in Object.keys(modrevs)">
   <h2> {{ key }} (Total MCs: {{ modrevs[key].map(x => x.frontmatter.mcs).reduce((x,y) => x+y, 0) }}) </h2>
