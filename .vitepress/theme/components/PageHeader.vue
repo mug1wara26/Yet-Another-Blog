@@ -12,6 +12,8 @@
     <i v-if="frontmatter.date"> <i></i>
       Last Update: {{ formatDate(frontmatter.date) }}
     </i>
+
+    <h2 v-if="frontmatter.dontLink">Nothing to see here</h2>
   </header>
 </template>
 
