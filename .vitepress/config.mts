@@ -24,5 +24,5 @@ export default defineConfig({
       md.use(footnote);
       md.use(mathPlugin);
     }
-  }
+  },
 })
