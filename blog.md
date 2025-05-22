@@ -3,6 +3,8 @@ title: All Blog Posts
 aside: false
 ---
 
+Nothing here for now
+<!---
 <script setup>
 import { data as blogs } from '/data/blogs.data'
 import formatDate from "/.vitepress/theme/utils/formatDate"
@@ -23,3 +25,4 @@ li {
     justify-content: space-between;
 }
 </style>
+-->
