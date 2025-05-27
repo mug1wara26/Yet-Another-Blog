@@ -6,7 +6,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Aloysius Goo",
   description: "Yet Another Blog Site",
-  base: "./",
+  base: "https://aloysius.dev",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
