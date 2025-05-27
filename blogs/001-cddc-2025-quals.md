@@ -18,7 +18,11 @@ without knowing the username of the account, so going to <https://x.com/a/status
 redirects us to <https://x.com/kayatoast_8l/status/1894661267354521816>, where the tweet says
 `flag{G0t_c4ught_b7_m7_0wn3r}`. Replacing `flag` with `CDDC2025` gives us the real flag.
 
-## Someone Stole my Table (Network Analysis)
+## Someone Stole my Table
+
+| Category | Network Analysis |
+|-|-|
+| Points | 100 |
 
 We are given a pcap file, there are a lot of HTTP requests resembling SQL injection.
 ![pcap](./001-cddc-2025-quals/pcap.png)
@@ -53,6 +57,10 @@ I assume the last request for each character was a successful guess, so I just s
 ```
 
 ## ReactUpgrade (Web)
+
+| Category | Web |
+|-|-|
+| Points | 100 |
 
 We are given a simple react app with two buttons.
 One button gives us 100 minerals, and another button increases our upgrade level at the cost of some minerals.
