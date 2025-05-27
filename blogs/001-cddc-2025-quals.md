@@ -56,7 +56,7 @@ I assume the last request for each character was a successful guess, so I just s
 'CONGRATULATIONS~THE_FLAG_IS~OPEN_YOUR_THIRD_EYE~'
 ```
 
-## ReactUpgrade (Web)
+## ReactUpgrade
 
 | Category | Web |
 |-|-|
