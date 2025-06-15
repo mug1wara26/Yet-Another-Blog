@@ -1,9 +1,12 @@
 ---
-title: CDDC 2025 Qualifiers Writeups
+title: CDDC 2025 Qualifiers
 date: 2025-05-27T20:27:00+08:00
+next:
+  text: CDDC 2025 Finals
+  link: /blogs/002-cddc-2025-finals
 ---
 
-Here are the challenges I solved for CDDC 2025 qualifiers.
+Here are the challenges I solved for CDDC 2025 qualifiers. My team ended up placing 10th in the Uni category.
 
 ## My Missing Hamster
 
