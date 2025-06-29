@@ -12,8 +12,10 @@ const sortedBlogs = getSorted( blogs );
 
 <ul>
   <li v-for="blog of sortedBlogs">
-    <a :href="blog.url">{{ blog.frontmatter.title }}</a><br/>
-        <span>{{ formatDate(blog.frontmatter.date) }}</span>
+    <template v-if="blog.frontmatter.hidden !== true">
+      <a :href="blog.url">{{ blog.frontmatter.title }}</a><br/>
+      <span>{{ formatDate(blog.frontmatter.date) }}</span>
+    </template>
   </li>
 </ul>
 
