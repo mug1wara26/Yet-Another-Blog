@@ -162,13 +162,108 @@ strategy we implemented is
 This strategy only evaluates expressions when they are needed during
 application, so arguments passed into a Lambda are not evaluated at first.
 
-In our implementation, we have three types of elements on the canvas.
+Godot's scene tree system comes in handy here. All the different elements of a
+Lambda expression are laid out in the scene tree, forming a kind of abstract
+syntax tree that we can recursively parse during evaluation. At each step of the
+evaluation, we modify the tree, replacing variables and removing lambdas.
+
+Our application logic is contained in the Parenthesis element. The function
+checks if the first element of the Parenthesis is a Parenthesis, if so, it calls
+the apply function on that subexpression. If it is a Lambda, we call the
+substitute function on the Lambda, which replaces all bound variables in its
+subtree with the argument. Note that the first element can never be a Variable
+as that would make the Lambda expression invalid.
+
+Here is some pseudocode for the application logic.
+
+```Python
+def apply():
+  var first = expressions[0]
+  if first is Parens:
+    first.apply()
+  elif expressions.size >= 2:
+    if first is Lambda:
+      first.substitute(expressions[1])
+    else:
+      Throw Error
+```
 
 ### Animations
 
 ### Level System
 
+The level system is partially implemented now. Each level is represented as a
+JSON file with the following structure:
+
+```JSON
+{
+  "example_input": [<List of lambda expressions>],
+  "example_output": "<lambda expression>",
+  "custom_expressions": {
+    "<name>": "<lambda expression as string>"
+  },
+  "messages": [<List of messages to be displayed during level>]
+}
+```
+
+`example_input` is a list of Lambda expressions written using
+[de Brujin Indexing](https://en.wikipedia.org/wiki/De_Bruijn_index).
+`example_output` is the same except it is only a single string. These strings
+are compiled into Lambda expressions that can be visualised in our game. They
+are used to show the player an example of what inputs would look like in our
+test cases and the corresponding expected outputs.
+
+We also support custom expressions that can be used in the lambda expressions.
+These can be thought of as named functions that can be referenced by
+`example_input` and `example_output`. The reason for this is to reduce the large
+size of complex lambda expressions. In the game these custom expressions will be
+visualised as a single element.
+
+Lastly, the JSON file can specify a list of messages to be displayed to the user
+at the start of the level. This is used to explain to the user what the level is
+about, and what they are supposed to construct to solve the level. These
+messages support
+[BBCode](https://docs.godotengine.org/en/latest/tutorials/ui/bbcode_in_richtextlabel.html),
+a markup language that can be used to format messages, e.g. bolding, lists, and
+tables.
+
+### Lambda Compiler
+
+As mentioned above, we have written a compiler that translates Lambda
+expressions from string to elements on a canvas in our game.
+
+The compiler first tokenizes and parses the string into an abstract syntax tree.
+We use a recursive descent parser based on the following grammar:
+
+```
+<expr>         ::= { <atom> }
+
+<atom>         ::= "/" <expr>
+                | "(" <expr> ")"
+                | <int>
+                | "[" <name> "]"
+
+<int>          ::= digit { digit }
+
+<name>         ::= identifier
+```
+
+We then optimize the AST, and translate it into our game, this process was
+trivial as the AST nodes have a direct mapping to the elements in our game.
+
 ## Software Engineering Practices
+
+Our code is hosted on GitHub. We make use of branches to implement different
+features, once these features are done, we open a PR to have the other team
+member review it before merging into master.
+
+We also make use of the issues tracker on GitHub to track bugs and features, and
+have them assigned to one of us.
+
+For milestone 3, we plan to implement unit tests and E2E testing. We also plan
+to use GitHub Actions for CI/CD, allowing us to lint and test every PR before
+allowing merge, as well as automatically build the binaries and web version of
+our game, and publish it itch.io.
 
 ## Planned features
 
@@ -184,11 +279,6 @@ In our implementation, we have three types of elements on the canvas.
    create their own levels with a built in level editor and export it to a file.
    They can then share this file with other people.
 5. More SFX and VFX to give the game some visual flair
-6. Unit tests using Godot Unit Tests, as well as E2E testing.
-7. Github actions for CI/CD, where we can automatically build the game and
-   publish it on the github page, as well as on itch.io
-8. Github actions for linting and testing, where we run a linter and test suite
-   for every PR, which must run successfully before being allowed to merge.
 
 ## Planned levels
 
