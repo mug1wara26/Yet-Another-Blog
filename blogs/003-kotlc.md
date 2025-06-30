@@ -218,7 +218,7 @@ together with some shader tricks, allow for a system that can deal with the
 dynamic nature of lambda expressions and animate the application process
 smoothly.
 
-![animated](./003-kotlc/animated.png)
+![animated](./003-kotlc/animated.gif)
 
 ### Level System
 
