@@ -162,6 +162,15 @@ Using these nodes, we can represent any lambda expression in the game UI.
 
 ![elements](./003-kotlc/elements.png)
 
+To evaluate expressions, the user has access to a set of buttons in th top right corner.
+They can evaluate the expression completely or step by step.
+They can also pause the animated evaluation whenever desired.
+We hope that this flexible system can facilitate learning and understanding
+of the lambda calculus evaluation process.
+
+![eval_buttons](./003-kotlc/eval_buttons.png)
+
+
 ### The evaluator
 
 When evaluating Lambda expressions, there are many different strategies. The
