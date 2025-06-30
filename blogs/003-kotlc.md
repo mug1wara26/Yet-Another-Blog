@@ -19,6 +19,8 @@ The game will be distributed as a binary and also be available on the web. We
 will support Windows and Linux, and the web version will be published on the
 itch.io platform.
 
+Try out our game [here!](https://mug1wara26.itch.io/knights-of-the-lambda-calculus)
+
 ## What is the Lambda Calculus?
 
 Before we explain the game, it would be good to have a brief understanding of
