@@ -272,13 +272,15 @@ our game, and publish it itch.io.
    submits their solution to thoroughly check that their solution is correct.
    Think of this as "private" test cases, while the level itself will have a
    "public" test case that is run with our step by step evaluator.
-2. Level design - Plan the design of chapters and levels.
-3. Playground - Allows users to play around with their own Lambda expressions,
+2. Playground - Allows users to play around with their own Lambda expressions,
    as well as create custom expressions.
-4. Custom Levels - We will design our own level file format. Users can then
+3. Custom Levels - We will design our own level file format. Users can then
    create their own levels with a built in level editor and export it to a file.
    They can then share this file with other people.
-5. More SFX and VFX to give the game some visual flair
+4. Level design - Plan the design of chapters and levels, this involves writing
+   out a custom level.json file for each level we have planned.
+5. More SFX and VFX to give the game some visual flair, like picking up elements
+   and dropping them down should have some sound effects and animation
 
 ## Planned levels
 
