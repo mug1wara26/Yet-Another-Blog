@@ -4,6 +4,8 @@ date: 2025-06-30T03:46:55+08:00
 hidden: true
 ---
 
+Targeted level of achievement: **Apollo**
+
 Knights Of The Lambda Calculus (KOTLC) is an educational game to teach players
 the basics of [Lambda Calculus](https://en.wikipedia.org/wiki/Lambda_calculus).
 Our game lets players have a sense of how such a simple system can be used to
@@ -19,7 +21,8 @@ The game will be distributed as a binary and also be available on the web. We
 will support Windows and Linux, and the web version will be published on the
 itch.io platform.
 
-Try out our game [here!](https://mug1wara26.itch.io/knights-of-the-lambda-calculus)
+Try out our game
+[here!](https://mug1wara26.itch.io/knights-of-the-lambda-calculus)
 
 ## What is the Lambda Calculus?
 
@@ -155,21 +158,23 @@ of scope for this readme, you can read about an introduction to Godot on
 [this page](https://docs.godotengine.org/en/stable/getting_started/introduction/index.html)
 
 ### UI
-We represent Lambda Calculus with 3 types of elements: Parenthesis, Lambdas, and Variables. 
-Parenthesis can contain an arbitary list of nodes, a Lambda has a Parenthesis representing its body, 
-and Variables are leaf nodes. These nodes form a (non binary) tree with a Parenthesis as the root - this is a lambda expression.
-Using these nodes, we can represent any lambda expression in the game UI.
+
+We represent Lambda Calculus with 3 types of elements: Parenthesis, Lambdas, and
+Variables. Parenthesis can contain an arbitary list of nodes, a Lambda has a
+Parenthesis representing its body, and Variables are leaf nodes. These nodes
+form a (non binary) tree with a Parenthesis as the root - this is a lambda
+expression. Using these nodes, we can represent any lambda expression in the
+game UI.
 
 ![elements](./003-kotlc/elements.png)
 
-To evaluate expressions, the user has access to a set of buttons in th top right corner.
-They can evaluate the expression completely or step by step.
-They can also pause the animated evaluation whenever desired.
-We hope that this flexible system can facilitate learning and understanding
-of the lambda calculus evaluation process.
+To evaluate expressions, the user has access to a set of buttons in th top right
+corner. They can evaluate the expression completely or step by step. They can
+also pause the animated evaluation whenever desired. We hope that this flexible
+system can facilitate learning and understanding of the lambda calculus
+evaluation process.
 
 ![eval_buttons](./003-kotlc/eval_buttons.png)
-
 
 ### The evaluator
 
@@ -206,11 +211,12 @@ def apply():
 ```
 
 ### Animations
-The animations make extensive use of Godot's Tweens. 
-These allow us to vary properties or call functions over time,
-with a lot of flexibility. These, together with some shader tricks, 
-allow for a system that can deal with the dynamic nature of lambda expressions
-and animate the application process smoothly.
+
+The animations make extensive use of Godot's Tweens. These allow us to vary
+properties or call functions over time, with a lot of flexibility. These,
+together with some shader tricks, allow for a system that can deal with the
+dynamic nature of lambda expressions and animate the application process
+smoothly.
 
 ![animated](./003-kotlc/animated.png)
 
@@ -284,10 +290,14 @@ member review it before merging into master.
 We also make use of the issues tracker on GitHub to track bugs and features, and
 have them assigned to one of us.
 
-For milestone 3, we plan to implement unit tests and E2E testing. We also plan
-to use GitHub Actions for CI/CD, allowing us to lint and test every PR before
-allowing merge, as well as automatically build the binaries and web version of
-our game, and publish it itch.io.
+Lastly, we have implemented a GitHub Actions workflow that automatically builds
+our game and publishes it to itch.io. To activate the actions, we just have to
+create a new tag with a label using semantic versioning:
+`git tag -a v<MAJOR>.<MINOR>.<PATCH>`. The workflow detects a new tag and builds
+the project from the master branch.
+
+For milestone 3, we plan to implement unit tests and E2E testing, allowing us to
+lint and test every PR before allowing merge using GitHub Actions.
 
 ## Planned features
 
