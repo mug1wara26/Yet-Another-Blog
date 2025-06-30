@@ -153,6 +153,12 @@ of scope for this readme, you can read about an introduction to Godot on
 [this page](https://docs.godotengine.org/en/stable/getting_started/introduction/index.html)
 
 ### UI
+We represent Lambda Calculus with 3 types of elements: Parenthesis, Lambdas, and Variables. 
+Parenthesis can contain an arbitary list of nodes, a Lambda has a Parenthesis representing its body, 
+and Variables are leaf nodes. These nodes form a (non binary) tree with a Parenthesis as the root - this is a lambda expression.
+Using these nodes, we can represent any lambda expression in the game UI.
+
+![elements](./003-kotlc/elements.PNG)
 
 ### The evaluator
 
@@ -189,6 +195,13 @@ def apply():
 ```
 
 ### Animations
+The animations make extensive use of Godot's Tweens. 
+These allow us to vary properties or call functions over time,
+with a lot of flexibility. These, together with some shader tricks, 
+allow for a system that can deal with the dynamic nature of lambda expressions
+and animate the application process smoothly.
+
+![animated](./003-kotlc/animated.PNG)
 
 ### Level System
 
