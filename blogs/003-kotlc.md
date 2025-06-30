@@ -160,7 +160,7 @@ Parenthesis can contain an arbitary list of nodes, a Lambda has a Parenthesis re
 and Variables are leaf nodes. These nodes form a (non binary) tree with a Parenthesis as the root - this is a lambda expression.
 Using these nodes, we can represent any lambda expression in the game UI.
 
-![elements](./003-kotlc/elements.PNG)
+![elements](./003-kotlc/elements.png)
 
 ### The evaluator
 
@@ -203,7 +203,7 @@ with a lot of flexibility. These, together with some shader tricks,
 allow for a system that can deal with the dynamic nature of lambda expressions
 and animate the application process smoothly.
 
-![animated](./003-kotlc/animated.PNG)
+![animated](./003-kotlc/animated.png)
 
 ### Level System
 
