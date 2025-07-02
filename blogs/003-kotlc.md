@@ -386,7 +386,3 @@ set, our set will work over the church numerals
 5. Intersection
 6. Is equal
 7. Difference
-
-### Chapter 7: Groups
-
-Levels undecided
