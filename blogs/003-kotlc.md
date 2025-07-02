@@ -6,7 +6,7 @@ hidden: true
 
 Targeted level of achievement: **Apollo**
 
-Knights Of The Lambda Calculus (KOTLC) is an educational game to teach players
+Knights of the Lambda Calculus (KOTLC) is an educational game to teach players
 the basics of [Lambda Calculus](https://en.wikipedia.org/wiki/Lambda_calculus).
 Our game lets players have a sense of how such a simple system can be used to
 compute anything. The game features a intuitive layout for visualising and
@@ -341,10 +341,7 @@ lint and test every PR before allowing merge using GitHub Actions.
 2. Fst and Snd
 3. Empty list and is empty
 4. Cons
-5. Concat
-6. Map
-7. Filter
-8. Fold left
+5. Access
 
 ### Chapter 4: Church Numeral Part 2
 
@@ -353,24 +350,31 @@ lint and test every PR before allowing merge using GitHub Actions.
 2. Minus
 3. Less than or equals
 4. Equals
-5. Division
+5. Division (Doesn't need y combinator)
 6. Remainder
 
-### Chapter 5: Rationals
+### Chapter 5: Recursion
 
 1. Factorial with Y combinator (We wont actually make them create the Y
    combinator, we will just explain the Y combinator to them and make them
    implement factorial)
-2. Mod
+2. Remainder with Y combinator
 3. GCD
-4. Rationals ($R = \lambda a. \lambda b. pair\ a\ b$, where a represents the
-   numerator and b represents the denominator)
-5. Simplify rational using GCD
-6. Convert to mixed fraction
-7. Multiplication
-8. Division
+4. Fold left
+5. Concat
+6. Map
+7. Filter
 
-### Chapter 6: Sets
+### Chapter 6: Rationals
+
+1. Rationals ($R = \lambda a. \lambda b. pair\ a\ b$, where a represents the
+   numerator and b represents the denominator)
+2. Simplify rational using GCD
+3. Convert to mixed fraction
+4. Multiplication
+5. Division
+
+### Chapter 7: Sets
 
 A set will be defined as a function that returns true if its argument is in the
 set, our set will work over the church numerals
