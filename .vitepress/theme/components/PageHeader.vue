@@ -1,16 +1,18 @@
 <template>
   <header class="vp-doc">
     <h1 v-if="page.title">
-      {{ page.title }}
+      {{ page.title }} {{ frontmatter.ta ? "(Teaching Assistant)" : "" }}
     </h1>
     <h3 v-if="page.relativePath.startsWith('modrevs')">
       {{ frontmatter.subtitle }}
 
-      (<a target="_blank" :href="`https://nusmods.com/courses/${page.title}`">NUSMods</a>)
+      (<a target="_blank" :href="`https://nusmods.com/courses/${page.title}`"
+        >NUSMods</a
+      >)
     </h3>
 
-    <i v-if="frontmatter.date"> <i></i>
-      Last Update: {{ formatDate(frontmatter.date) }}
+    <i v-if="frontmatter.date">
+      <i></i> Last Update: {{ formatDate(frontmatter.date) }}
     </i>
 
     <h2 v-if="frontmatter.dontLink">Nothing to see here</h2>
@@ -18,11 +20,10 @@
 </template>
 
 <script setup lang="ts">
-import { useData } from 'vitepress';
-import formatDate from '../utils/formatDate';
+import { useData } from "vitepress";
+import formatDate from "../utils/formatDate";
 const { page, frontmatter } = useData();
 </script>
-
 
 <style scoped>
 header {

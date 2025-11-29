@@ -2,6 +2,7 @@
 title: Modules
 aside: false
 ---
+
 <script setup>
 import { data as modrevs } from '/data/modrevs.data'
 import formatDate from "/.vitepress/theme/utils/formatDate"
@@ -19,8 +20,8 @@ If a module does not have a link attached to it, I either SU'd it or it did not 
   <ul>
     <li v-for="post of modrevs[key]">
     <div class="list-item">
-      <span v-if="post.frontmatter.dontLink">{{ post.frontmatter.title }} {{ post.frontmatter.subtitle }}</span>
-      <a v-else :href="post.url">{{ post.frontmatter.title }} {{ post.frontmatter.subtitle }}</a> <br> {{ post.frontmatter.mcs }} MCs
+      <span v-if="post.frontmatter.dontLink">{{ post.frontmatter.title }} {{ post.frontmatter.subtitle }} </span>
+      <a v-else :href="post.url">{{ post.frontmatter.title }} {{ post.frontmatter.subtitle }}  </a> <br> {{ post.frontmatter.ta ? "(TA)" : post.frontmatter.mcs + " MCs" }}
     </div>
     </li>
   </ul>
