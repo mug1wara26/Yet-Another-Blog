@@ -15,6 +15,9 @@ through what a module covers, and also allows me to mention fun things I did in
 that module. If a module does not have a link attached to it, I either SU'd it
 or it did not have much worth talking about.
 
+Total MCs:
+{{ Object.values(modrevs).map(x => x.map(y => y.frontmatter.mcs).reduce((x, y) => x + y)).reduce((x, y) => x + y) }}/160
+
 <template v-for="key in Object.keys(modrevs)">
   <h2> {{ key }} (Total MCs: {{ modrevs[key].map(x => x.frontmatter.mcs).reduce((x,y) => x+y, 0) }}) </h2>
   <span v-for="post of modrevs[key]">
