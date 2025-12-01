@@ -57,7 +57,7 @@ using a modified set of
   Apr 2024)
 - VSCode Engineer under NUS Student Work Scheme. Worked on integrating a
   [VSCode extension](https://github.com/source-academy/vscode) into Source
-  Academy.
+  Academy. (May 2025 - Jul 2025)
 
 ## Things I'm doing now
 
