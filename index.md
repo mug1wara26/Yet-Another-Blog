@@ -36,7 +36,6 @@ using a modified set of
 
 ## Stuff I've done
 
-- Won [Splash Awards 2022](https://github.com/jun-lsh/splash-awards-22)
 - Won a few CTFs in High School ([CDDC](https://www.dsta.gov.sg/brainhack)
   2022/2023, [Cyberthon](https://cyberthon.hci.edu.sg/) 2023)
 - Went to Italy to participate in the
@@ -44,6 +43,10 @@ using a modified set of
   Singapore
 - Showcased [my project](https://github.com/source-academy/source-lsp) for the
   26th SOC Term Project Showcase
+- Gave a talk about the
+  [Lambda Calculus](https://docs.google.com/presentation/d/1RbY8WU32NF04ajep4CpUFGsISR3niQwdnm31qHS_TxQ/edit?usp=sharing),
+  no recording but I might give the talk again in the future and hopefully
+  record it.
 
 ## Work experience
 
