@@ -19,7 +19,7 @@ Total MCs:
 {{ Object.values(modrevs).map(x => x.map(y => y.frontmatter.mcs).reduce((x, y) => x + y)).reduce((x, y) => x + y) }}/160
 
 <template v-for="key in Object.keys(modrevs)">
-  <h2> {{ key }} (Total MCs: {{ modrevs[key].map(x => x.frontmatter.mcs).reduce((x,y) => x+y, 0) }}) </h2>
+  <h2> {{ key }} (MCs: {{ modrevs[key].map(x => x.frontmatter.mcs).reduce((x,y) => x+y, 0) }}) </h2>
   <span v-for="post of modrevs[key]">
     <div class="list-item">
       <span class="item-title" v-if="post.frontmatter.dontLink">
