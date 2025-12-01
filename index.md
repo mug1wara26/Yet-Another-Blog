@@ -58,6 +58,6 @@ using a modified set of
 
 ## Things I'm doing now
 
-- Member of NUS [GreyHats](https://nusgreyhats.org/)
+- Member of NUS [Greyhats](https://nusgreyhats.org/)
 - TA for CS1101S in AY2025/26 Semester 1
 - Learning compiler design
