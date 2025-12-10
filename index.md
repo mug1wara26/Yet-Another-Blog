@@ -21,6 +21,14 @@ DX tooling like Java. I also find it really convenient to take notes with LaTeX,
 using a modified set of
 [Luasnip snippets for LaTex](https://github.com/evesdropper/luasnip-latex-snippets.nvim).
 
+## Things I'm doing now
+
+- Member of NUS [Greyhats](https://nusgreyhats.org/)
+- Learning compiler design
+- Working through [Crafting Interpreters](https://craftinginterpreters.com),
+  currently implementing [jlox](https://github.com/mug1wara26/jlox/tree/master)
+- TA for CS2030S in AY2025/26 Semester 2
+
 ## Projects I've made
 
 - [Source LSP](https://github.com/source-academy/source-lsp). A language server
@@ -47,6 +55,7 @@ using a modified set of
   [Lambda Calculus](https://docs.google.com/presentation/d/1RbY8WU32NF04ajep4CpUFGsISR3niQwdnm31qHS_TxQ/edit?usp=sharing),
   no recording but I might give the talk again in the future and hopefully
   record it.
+- TA for CS1101S in AY2025/26 Semester 1
 
 ## Work experience
 
@@ -58,9 +67,3 @@ using a modified set of
 - VSCode Engineer under NUS Student Work Scheme. Worked on integrating a
   [VSCode extension](https://github.com/source-academy/vscode) into Source
   Academy. (May 2025 - Jul 2025)
-
-## Things I'm doing now
-
-- Member of NUS [Greyhats](https://nusgreyhats.org/)
-- TA for CS1101S in AY2025/26 Semester 1
-- Learning compiler design
