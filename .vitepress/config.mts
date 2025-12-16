@@ -1,6 +1,7 @@
 import footnote from "markdown-it-footnote";
 import mathPlugin from "markdown-it-mathjax3";
 import { defineConfig } from "vitepress";
+import uiuaGrammar from "./uiua.tmLanguage.json";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -26,5 +27,11 @@ export default defineConfig({
       md.use(footnote);
       md.use(mathPlugin);
     },
+    languages: [
+      {
+        ...uiuaGrammar,
+        name: "uiua",
+      },
+    ],
   },
 });
