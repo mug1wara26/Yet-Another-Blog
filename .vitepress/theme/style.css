@@ -1,3 +1,8 @@
+@import url("https://www.uiua.org/src/Uiua386.ttf");
+
+div[class*="language-uiua"] span {
+  font-family: "Uiua386", monospace !important;
+}
 /**
  * Customize default theme styling by overriding CSS variables:
  * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
@@ -75,7 +80,6 @@
   --vp-c-text-1: #b6927b;
   --vp-c-text-2: #737c73;
 }
-
 
 .vp-doc pre {
   background-color: #24242c !important;

@@ -1,6 +1,9 @@
 ---
 title: CDDC 2025 Finals
 date: 2025-06-14T13:28:41+08:00
+next:
+  text: AOC 2025
+  link: /blogs/003-aoc-2025
 prev:
   text: CDDC 2025 Qualifiers
   link: /blogs/001-cddc-2025-quals
