@@ -1,4 +1,10 @@
-@import url("https://www.uiua.org/src/Uiua386.ttf");
+@font-face {
+  font-family: "Uiua386";
+  src: url("/fonts/Uiua386.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 div[class*="language-uiua"] span {
   font-family: "Uiua386", monospace !important;
